@@ -4,3 +4,4 @@
 testing_*.coverprofile
 
 examples/
+vendor/
