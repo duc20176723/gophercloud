@@ -230,7 +230,7 @@ type CreateOpts struct {
 	Tags                 []string    `json:"tags,omitempty"`
 	BlockDeviceMappingV2 interface{} `json:"block_device_mapping_v2,omitempty"`
 	KeyName              *string     `json:"key_name,omitempty"`
-	ServerGroup          *string     `json:"os:scheduler_hints.group,omitempty"`
+	OsSchedulerHints     interface{} `json:"os:scheduler_hints,omitempty"`
 }
 
 // ToServerCreateMap assembles a request body based on the contents of a
